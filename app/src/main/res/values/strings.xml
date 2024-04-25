@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android_SMS_Scheduller</string>
+    <string name="enter_phone_number" />
+    <string name="contact_name" />
+    <string name="write_message" />
+    <string name="enter_time" />
+    <string name="enter_date" />
+    <string name="hello_blank_fragment" />
+</resources>

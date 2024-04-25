@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sms_fragment"
+    android:background="#92545555">
+
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginTop="140sp"
+        android:ems="10"
+        android:hint="@string/enter_phone_number"
+        android:inputType="phone"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/cName"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginStart="80sp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginBottom="-40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/contact_name"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/cMessage"
+        android:layout_width="260dp"
+        android:layout_height="153dp"
+
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginStart="80sp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginBottom="-182dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/write_message"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/STime"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginStart="80sp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginBottom="-308dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_time"
+        android:inputType="time"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Sdate"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginStart="80sp"
+        android:layout_marginLeft="70sp"
+        android:layout_marginBottom="-251dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_date"
+        android:inputType="date"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="167dp"
+        android:drawableRight="@drawable/send_b"
+        android:text="send"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/picContract"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginLeft="294dp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/imageTime"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginLeft="294dp"
+        android:layout_marginBottom="-301dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageDate"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/Phone"
+        android:layout_marginLeft="294dp"
+        android:layout_marginBottom="-236dp"
+        android:src="@drawable/baseline_calendar_view_month_24"
+
+        />
+
+</RelativeLayout>
