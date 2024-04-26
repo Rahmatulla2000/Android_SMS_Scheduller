@@ -6,8 +6,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sms_fragment"
-    android:background="#92545555">
+    tools:context=".sms_fragment">
 
 
     <EditText
@@ -15,12 +14,12 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80sp"
-        android:layout_marginLeft="70sp"
         android:layout_marginTop="140sp"
-        android:ems="10"
         android:hint="@string/enter_phone_number"
+        android:ems="10"
         android:inputType="phone"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        tools:ignore="Autofill" />
 
     <EditText
         android:id="@+id/cName"
@@ -28,9 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/Phone"
         android:layout_marginStart="80sp"
-        android:layout_marginLeft="70sp"
         android:layout_marginBottom="-40dp"
-        android:autofillHints=""
+        android:autofillHints="name"
         android:ems="10"
         android:hint="@string/contact_name"
         android:inputType="text"
@@ -43,7 +41,6 @@
 
         android:layout_alignBottom="@+id/Phone"
         android:layout_marginStart="80sp"
-        android:layout_marginLeft="70sp"
         android:layout_marginBottom="-182dp"
         android:autofillHints=""
         android:ems="10"
@@ -57,7 +54,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/Phone"
         android:layout_marginStart="80sp"
-        android:layout_marginLeft="70sp"
         android:layout_marginBottom="-308dp"
         android:autofillHints=""
         android:ems="10"
@@ -71,7 +67,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/Phone"
         android:layout_marginStart="80sp"
-        android:layout_marginLeft="70sp"
         android:layout_marginBottom="-251dp"
         android:autofillHints=""
         android:ems="10"
@@ -84,13 +79,11 @@
         android:layout_width="wrap_content"
         android:layout_height="67dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
         android:layout_marginBottom="167dp"
-        android:drawableRight="@drawable/send_b"
-        android:text="send"
+        android:drawableEnd="@drawable/send_b"
+        android:text="@string/send"
         android:textSize="30sp" />
 
     <ImageView
@@ -98,27 +91,28 @@
         android:layout_width="77dp"
         android:layout_height="39dp"
         android:layout_alignBottom="@+id/Phone"
-        android:layout_marginLeft="294dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginStart="294dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageTime"
         android:layout_width="77dp"
         android:layout_height="39dp"
         android:layout_alignBottom="@+id/Phone"
-        android:layout_marginLeft="294dp"
+        android:layout_marginStart="294dp"
         android:layout_marginBottom="-301dp"
-        />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageDate"
         android:layout_width="77dp"
         android:layout_height="39dp"
         android:layout_alignBottom="@+id/Phone"
-        android:layout_marginLeft="294dp"
+        android:layout_marginStart="294dp"
         android:layout_marginBottom="-236dp"
         android:src="@drawable/baseline_calendar_view_month_24"
 
-        />
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>

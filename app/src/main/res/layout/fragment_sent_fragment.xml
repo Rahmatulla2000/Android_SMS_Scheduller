@@ -6,10 +6,10 @@
     tools:context=".sent_fragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:background="@color/black"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="sent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview_sent"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+       />
 
 </FrameLayout>
